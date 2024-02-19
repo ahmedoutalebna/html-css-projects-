@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Montserrat&family=Mulish&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&family=Quicksand&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    display: flex;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    min-height: 100vh;
+    justify-content: center;
+}
+.container
+{
+    background-color: white;
+    width: 450px;
+    height: fit-content;
+    min-height: 400px;
+    max-height: 100vh;
+    border-radius: 12px;
+    margin: 7rem 7rem;
+    padding: 2rem 3rem;
+}
+.heading
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+.heading h2
+{
+    color:  #153677;
+    margin-right: 10px;
+}
+.heading img
+{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tasks
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem ;
+}
+.tasks input
+{
+    width: 75%;
+    padding: 1rem 1rem;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(201, 197, 197);
+}
+.tasks button 
+{
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: orangered;
+    color: white;
+    width: 30%;
+    position: absolute;
+    left: 70%;
+}
+.add_new_task
+{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: auto;
+    gap: 1rem;
+    
+}
+.add_new_task img, .add_new_task p, .add_new_task i
+{
+    margin-bottom: 15px;
+}
+.add_new_task img
+{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center;
+}
